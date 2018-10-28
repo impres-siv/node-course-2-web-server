@@ -53,6 +53,14 @@ app.get('/about',(req, res)=>{
 	});
 });
 
+app.get('/projects',(req, res)=>{
+	res.render('portfolio.hbs',{
+		pageTitle: 'Portfolio'
+	});
+});
+
+
+
 app.get('/bad',(req, res)=>{
 	res.send({
 		errorMessage: 'Bruh you thought that would work'
